@@ -4,3 +4,41 @@
     box-sizing: border-box;
     overflow: hidden;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: pink;
+    height: 100%;
+}
+
+.grid-head {
+    background-color: darkred;
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+}
+
+.nav {
+    background-color: darkgoldenrod;
+    grid-row: 1 / 5;
+    grid-column: 1 / 2;
+}
+
+.main {
+    background-color: chartreuse;
+    grid-row: 2 / 4;
+    grid-column: 2 / 5;
+}
+
+.foot {
+    background-color: black;
+    grid-row: 4 / 5;
+    grid-column: 1 / 5;
+}
+
+.social {
+    background-color: darkviolet;
+    grid-row: 4 / 5;
+    grid-column: 3 / 5;
+}
