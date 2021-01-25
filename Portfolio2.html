@@ -14,32 +14,43 @@
 </head>
 
 <body>
-    <div class="grid-container">
 
-        <header class="grid-head">
-            <img src="DOLLLOGO.png" alt="Logo">
-        </header>
-        <nav class="nav">
+    <header class="grid-head">
+        <img src="DOLLLOGO.png" alt="Logo" id="logo">
+        <nav id="myNav" class="nav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#" id="home">HOME</a>
             <a href="#" id="about">ABOUT</a>
             <a href="#" id="projects">PROJECTS</a>
             <a href="#" id="contact">CONTACT</a>
         </nav>
-        <main class="main">
-            <h1>#</h1>
-        </main>
-        <footer class="foot">
-            <p>#COPYWRITE</p>
-            <div class="social">
-                <a href="#" alt="My Facebook Page"><i class="fab fa-facebook-square fa-6x"></i></a>
-                <a href="#" alt="My GitHub Page"><i class="fab fa-github-square fa-6x"></i></a>
-                <a href="#" alt="My Stack Overflow Page"><i class="fab fa-stack-overflow fa-6x"></i></a>
-                <a href="#" alt="My Twitter Page"><i class="fab fa-twitter-square fa-6x"></i></a>
-                <a href="#" alt="My Linkedin Page"><i class="fab fa-linkedin fa-6x"></i></a>
-            </div>
-        </footer>
-    </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    </header>
+
+    <main class="main">
+        <h1>#</h1>
+    </main>
+    <footer class="foot">
+        <p>#COPYWRITE</p>
+        <div class="social">
+            <a href="#" alt="My Facebook Page"><i class="fab fa-facebook-square fa-6x"></i></a>
+            <a href="#" alt="My GitHub Page"><i class="fab fa-github-square fa-6x"></i></a>
+            <a href="#" alt="My Stack Overflow Page"><i class="fab fa-stack-overflow fa-6x"></i></a>
+            <a href="#" alt="My Twitter Page"><i class="fab fa-twitter-square fa-6x"></i></a>
+            <a href="#" alt="My Linkedin Page"><i class="fab fa-linkedin fa-6x"></i></a>
+        </div>
+    </footer>
+
 
 </body>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0";
+    }
+</script>
 
 </html>
