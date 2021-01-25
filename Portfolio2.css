@@ -14,7 +14,7 @@
 }
 
 .grid-head {
-    background-color: darkred;
+    background-color: black;
     grid-row: 1 / 2;
     grid-column: 1 / 5;
 }
