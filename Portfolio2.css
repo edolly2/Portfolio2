@@ -119,7 +119,6 @@
                 .foot {
                     display: flex;
                     grid-area: footer;
-                    background-color: transparent;
                     position: fixed;
                     bottom: 0;
                     right: 0;
