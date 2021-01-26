@@ -63,8 +63,11 @@
             /** ===========MAIN================ **/
             
             .main {
+                background-image: url("meredblue.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
                 grid-area: main;
-                background-color: chartreuse;
                 min-height: 400px;
             }
             /** ===========FOOTER================ **/
