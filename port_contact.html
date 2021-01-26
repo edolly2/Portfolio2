@@ -19,6 +19,57 @@
 
 <body>
 
+    <body class="grid-container">
+
+        <header class="grid-head">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fas fa-angle-double-right fa-6x"></i></span>
+
+        </header>
+        <aside>
+            <nav id="myNav" class="nav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="port_home.html" id="home">HOME</a>
+                <a href="port_about.html" id="about">ABOUT</a>
+                <a href="port_projects.html" id="projects">PROJECTS</a>
+                <a href="port_contact.html" id="contact">CONTACT</a>
+            </nav>
+
+
+        </aside>
+        <main class="main" id="main">
+
+
+
+        </main>
+        <footer class="foot">
+            <p id="copy">&#169;Copyright 2021 www.Dollyllama.ninja</p>
+            <div class="social">
+                <a href="https://www.facebook.com/dev.dollinger" alt="My Facebook Page" target="_blank"><i class="fab fa-facebook-square fa-5x"></i></a>
+                <a href="https://github.com/edolly2" alt="My GitHub Page" target="_blank"><i class="fab fa-github-square fa-5x"></i></a>
+                <a href="https://stackexchange.com/users/20534397/edolly2" alt="My Stack Overflow Page" target="_blank"><i class="fab fa-stack-overflow fa-5x"></i></a>
+                <a href="https://twitter.com/DevDollinger" alt="My Twitter Page" target="_blank"><i class="fab fa-twitter-square fa-5x"></i></a>
+                <a href="https://www.linkedin.com/in/eric-dollinger-967876202/" alt="My Linkedin Page" target="_blank"><i class="fab fa-linkedin fa-5x"></i></a>
+            </div>
+
+
+        </footer>
+
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+        </script>
+
+    </body>
+
+
+</html>
 </body>
 
 </html>
