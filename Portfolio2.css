@@ -48,7 +48,7 @@
                 }
                 
                 .nav a {
-                    padding: 8px 8px 8px 32px;
+                    padding: 20px 8px 20px 32px;
                     text-decoration: none;
                     font-size: 25px;
                     color: #fff;
@@ -58,6 +58,7 @@
                 
                 .nav a:hover {
                     color: yellow;
+                    text-decoration: line-through;
                 }
                 
                 .nav .closebtn {
@@ -128,6 +129,11 @@
                     width: 100%;
                     background-color: transparent;
                 }
+                
+                #copy {
+                    padding-left: 10px;
+                    color: white;
+                }
                 /** ===========SOCIAL MEDIA================ **/
                 
                 .social {
@@ -166,10 +172,6 @@
                 .nav {
                     font-family: 'Permanent Marker', cursive;
                 }
-                
-                .copy {
-                    color: white;
-                }
                 /** ===========MEDIA Q's================ **/
                 
                 @media screen and (max-height: 450px) {
@@ -178,5 +180,11 @@
                     }
                     .nav a {
                         font-size: 18px;
+                    }
+                }
+                
+                @media screen and (max-width: 700px) {
+                    #copy {
+                        display: none;
                     }
                 }
