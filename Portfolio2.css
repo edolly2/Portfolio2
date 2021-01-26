@@ -4,14 +4,14 @@
                 box-sizing: border-box;
                 overflow: hidden;
             }
-            /** ===========BODY/GRID================ **/
+            /** ===========GRID================ **/
             
-            body {
+            .grid-container {
                 display: grid;
-                grid-template-columns: 1fr 3fr;
-                grid-template-rows: 1fr 3fr 1fr;
+                grid-template-columns: 0.4fr 1.1fr;
+                grid-template-rows: 0.4fr 1.1fr 0.4fr;
+                gap: 0px 0px;
                 grid-template-areas: "header header" "nav main" "footer footer";
-                background-color: pink;
             }
             
             .grid-head {
@@ -22,18 +22,18 @@
             }
             
             .grid-head h1 {
-                text-align: right;
+                display: flex;
+                justify-content: flex-end;
                 font-size: 6vw;
                 margin-top: -90px;
-                margin-right: 5vw;
                 color: green;
             }
             /** ===========NAVIGATION================ **/
             
             .nav {
                 grid-area: nav;
-                height: 100%;
-                width: 0;
+                margin: auto;
+                width: 50%;
                 position: fixed;
                 z-index: 1;
                 top: 0;
@@ -84,6 +84,9 @@
                 background-color: darkviolet;
                 height: auto;
                 margin-left: auto;
+            }
+            
+            .social a {
                 padding: 0 20px;
             }
             /** ===========LOGO/PHOTOS================ **/
