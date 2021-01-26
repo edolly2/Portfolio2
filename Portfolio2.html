@@ -17,8 +17,10 @@
 <body class="grid-container">
 
     <header class="grid-head">
-        <img src="DOLLLOGO.png" alt="Logo" id="logo">
-        <h1>Eric Dollinger</h1>
+
+
+    </header>
+    <aside>
         <nav id="myNav" class="nav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#" id="home">HOME</a>
@@ -27,10 +29,10 @@
             <a href="#" id="contact">CONTACT</a>
         </nav>
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-    </header>
+    </aside>
+    <main class="main" id="main">
 
-    <main class="main">
-        <h2>#</h2>
+        <h1 id="myname">Eric Dollinger</h1>
 
     </main>
     <footer class="foot">
@@ -42,18 +44,25 @@
             <a href="#" alt="My Twitter Page"><i class="fab fa-twitter-square fa-5x"></i></a>
             <a href="#" alt="My Linkedin Page"><i class="fab fa-linkedin fa-5x"></i></a>
         </div>
+
+
     </footer>
 
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
 
 </body>
-<script>
-    function openNav() {
-        document.getElementById("myNav").style.width = "250px";
-    }
 
-    function closeNav() {
-        document.getElementById("myNav").style.width = "0";
-    }
-</script>
 
 </html>

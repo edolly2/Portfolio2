@@ -4,40 +4,53 @@
                 box-sizing: border-box;
                 overflow: hidden;
             }
+            
+            body {
+                background-image: url("meredblue.png"), radial-gradient(circle, rgba(48, 201, 254, 1) 20%, rgba(243, 208, 156, 1) 67%, rgba(254, 83, 83, 1) 82%, rgba(22, 97, 127, 1) 87%, rgba(24, 25, 25, 1) 100%);
+                ;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
             /** ===========GRID================ **/
             
             .grid-container {
                 display: grid;
                 grid-template-columns: 0.4fr 1.1fr;
-                grid-template-rows: 0.4fr 1.1fr 0.4fr;
+                grid-template-rows: 0.4fr 1.1fr 0.1fr;
                 gap: 0px 0px;
                 grid-template-areas: "header header" "nav main" "footer footer";
             }
             
             .grid-head {
                 grid-area: header;
-                background-color: black;
-                font-family: 'Voodoo Vampire';
+                background-image: url('DOLLLOGO.png');
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: contain;
                 max-height: 175px;
             }
             
-            .grid-head h1 {
+            .main h1 {
                 display: flex;
                 justify-content: flex-end;
                 font-size: 6vw;
-                margin-top: -90px;
-                color: green;
             }
             /** ===========NAVIGATION================ **/
             
+            body {
+                transition: background-color .5s;
+            }
+            
             .nav {
-                grid-area: nav;
-                margin: auto;
-                width: 50%;
+                height: 100%;
+                width: 0;
                 position: fixed;
                 z-index: 1;
                 top: 0;
                 left: 0;
+                background-color: #111;
+                overflow-x: hidden;
                 transition: 0.5s;
                 padding-top: 60px;
             }
@@ -51,9 +64,11 @@
                 transition: 0.3s;
             }
             
-            .nav a:hover {}
+            .nav a:hover {
+                color: #f1f1f1;
+            }
             
-            .nav .closbtn {
+            .nav .closebtn {
                 position: absolute;
                 top: 0;
                 right: 25px;
@@ -63,19 +78,20 @@
             /** ===========MAIN================ **/
             
             .main {
-                background-image: url("meredblue.png");
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
                 grid-area: main;
                 min-height: 400px;
+            }
+            
+            #main {
+                transition: margin-left .5s;
+                padding: 16px;
             }
             /** ===========FOOTER================ **/
             
             .foot {
                 display: flex;
                 grid-area: footer;
-                background-color: black;
+                background-color: transparent;
                 position: fixed;
                 bottom: 0;
                 right: 0;
@@ -84,7 +100,7 @@
             /** ===========SOCIAL MEDIA================ **/
             
             .social {
-                background-color: darkviolet;
+                background-color: transparent;
                 height: auto;
                 margin-left: auto;
             }
@@ -98,4 +114,21 @@
                 display: flex;
                 width: 100px;
                 margin: auto;
+            }
+            /** ===========TYPOGRAPHY================ **/
+            
+            #myname {
+                color: #FFFFFF;
+                text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+                font-family: 'Monday Routines';
+            }
+            /** ===========MEDIA Q's================ **/
+            
+            @media screen and (max-height: 450px) {
+                .nav {
+                    padding-top: 15px;
+                }
+                .nav a {
+                    font-size: 18px;
+                }
             }
