@@ -1,134 +1,156 @@
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                overflow: hidden;
-            }
-            
-            body {
-                background-image: url("meredblue.png"), radial-gradient(circle, rgba(48, 201, 254, 1) 20%, rgba(243, 208, 156, 1) 67%, rgba(254, 83, 83, 1) 82%, rgba(22, 97, 127, 1) 87%, rgba(24, 25, 25, 1) 100%);
-                ;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-            /** ===========GRID================ **/
-            
-            .grid-container {
-                display: grid;
-                grid-template-columns: 0.4fr 1.1fr;
-                grid-template-rows: 0.4fr 1.1fr 0.1fr;
-                gap: 0px 0px;
-                grid-template-areas: "header header" "nav main" "footer footer";
-            }
-            
-            .grid-head {
-                grid-area: header;
-                background-image: url('DOLLLOGO.png');
-                background-repeat: no-repeat;
-                background-position: right;
-                background-size: contain;
-                max-height: 175px;
-            }
-            
-            .main h1 {
-                display: flex;
-                justify-content: flex-end;
-                font-size: 6vw;
-            }
-            /** ===========NAVIGATION================ **/
-            
-            body {
-                transition: background-color .5s;
-            }
-            
-            .nav {
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                left: 0;
-                background-color: rgba(254, 83, 83, 0.5);
-                overflow-x: hidden;
-                transition: 0.5s;
-                padding-top: 60px;
-            }
-            
-            .nav a {
-                padding: 8px 8px 8px 32px;
-                text-decoration: none;
-                font-size: 25px;
-                color: #818181;
-                display: block;
-                transition: 0.3s;
-            }
-            
-            .nav a:hover {
-                color: #f1f1f1;
-            }
-            
-            .nav .closebtn {
-                position: absolute;
-                top: 0;
-                right: 25px;
-                font-size: 36px;
-                margin-left: 50px;
-            }
-            /** ===========MAIN================ **/
-            
-            .main {
-                grid-area: main;
-                min-height: 400px;
-            }
-            
-            #main {
-                transition: margin-left .5s;
-                padding: 16px;
-            }
-            /** ===========FOOTER================ **/
-            
-            .foot {
-                display: flex;
-                grid-area: footer;
-                background-color: transparent;
-                position: fixed;
-                bottom: 0;
-                right: 0;
-                width: 100%;
-            }
-            /** ===========SOCIAL MEDIA================ **/
-            
-            .social {
-                background-color: transparent;
-                height: auto;
-                margin-left: auto;
-            }
-            
-            .social a {
-                padding: 0 20px;
-            }
-            /** ===========LOGO/PHOTOS================ **/
-            
-            #logo {
-                display: flex;
-                width: 100px;
-                margin: auto;
-            }
-            /** ===========TYPOGRAPHY================ **/
-            
-            #myname {
-                color: #FFFFFF;
-                text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
-                font-family: 'Monday Routines';
-            }
-            /** ===========MEDIA Q's================ **/
-            
-            @media screen and (max-height: 450px) {
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    overflow: hidden;
+                }
+                
+                body {
+                    background-image: url("meredblue.png"), radial-gradient(circle, rgba(48, 201, 254, 1) 20%, rgba(243, 208, 156, 1) 67%, rgba(254, 83, 83, 1) 82%, rgba(22, 97, 127, 1) 87%, rgba(24, 25, 25, 1) 100%);
+                    ;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                /** ===========GRID================ **/
+                
+                .grid-container {
+                    display: grid;
+                    grid-template-columns: 0.4fr 1.1fr;
+                    grid-template-rows: 0.4fr 1.1fr 0.1fr;
+                    gap: 0px 0px;
+                    grid-template-areas: "header header" "nav main" "footer footer";
+                }
+                
+                .grid-head {
+                    grid-area: header;
+                    background-image: url('DOLLLOGO.png');
+                    background-repeat: no-repeat;
+                    background-position: right;
+                    background-size: contain;
+                    max-height: 175px;
+                }
+                
+                .main h1 {
+                    display: flex;
+                    justify-content: flex-end;
+                    font-size: 6vw;
+                }
+                /** ===========NAVIGATION================ **/
+                
                 .nav {
-                    padding-top: 15px;
+                    height: 100%;
+                    width: 0;
+                    position: fixed;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(22, 97, 127, 1);
+                    overflow-x: hidden;
+                    transition: 0.5s;
+                    padding-top: 60px;
                 }
+                
                 .nav a {
-                    font-size: 18px;
+                    padding: 8px 8px 8px 32px;
+                    text-decoration: none;
+                    font-size: 25px;
+                    color: #818181;
+                    display: block;
+                    transition: 0.3s;
                 }
-            }
+                
+                .nav a:hover {
+                    color: #f1f1f1;
+                }
+                
+                .nav .closebtn {
+                    position: absolute;
+                    top: 0;
+                    right: 25px;
+                    font-size: 36px;
+                    margin-left: 50px;
+                }
+                
+                .fas {
+                    color: rgba(254, 83, 83, 1);
+                    animation-name: fas;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                }
+                
+                @keyframes fas {
+                    0% {
+                        color: rgba(254, 83, 83, 1);
+                    }
+                    25% {
+                        color: rgba(22, 97, 127, 1);
+                    }
+                    50% {
+                        color: rgba(254, 83, 83, 1);
+                    }
+                    75% {
+                        color: rgba(22, 97, 127, 1);
+                    }
+                    100% {
+                        color: rgba(254, 83, 83, 1);
+                    }
+                }
+                /** ===========MAIN================ **/
+                
+                .main {
+                    grid-area: main;
+                    min-height: 400px;
+                }
+                
+                #main {
+                    transition: margin-left .5s;
+                    padding: 16px;
+                }
+                /** ===========FOOTER================ **/
+                
+                .foot {
+                    display: flex;
+                    grid-area: footer;
+                    background-color: transparent;
+                    position: fixed;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                }
+                /** ===========SOCIAL MEDIA================ **/
+                
+                .social {
+                    background-color: transparent;
+                    height: auto;
+                    margin-left: auto;
+                }
+                
+                .social a {
+                    padding: 0 20px;
+                }
+                /** ===========LOGO/PHOTOS================ **/
+                
+                #logo {
+                    display: flex;
+                    width: 100px;
+                    margin: auto;
+                }
+                /** ===========TYPOGRAPHY================ **/
+                
+                #myname {
+                    color: #FFFFFF;
+                    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+                    font-family: 'Monday Routines';
+                }
+                /** ===========MEDIA Q's================ **/
+                
+                @media screen and (max-height: 450px) {
+                    .nav {
+                        padding-top: 15px;
+                    }
+                    .nav a {
+                        font-size: 18px;
+                    }
+                }
