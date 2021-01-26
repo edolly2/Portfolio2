@@ -51,13 +51,13 @@
                     padding: 8px 8px 8px 32px;
                     text-decoration: none;
                     font-size: 25px;
-                    color: #818181;
+                    color: #fff;
                     display: block;
                     transition: 0.3s;
                 }
                 
                 .nav a:hover {
-                    color: #f1f1f1;
+                    color: yellow;
                 }
                 
                 .nav .closebtn {
@@ -113,8 +113,9 @@
                 
                 .main p {
                     display: flex;
-                    text-align: left;
                     font-size: 24px;
+                    text-align: center;
+                    padding-left: 5px;
                 }
                 /** ===========FOOTER================ **/
                 
@@ -135,8 +136,14 @@
                 }
                 
                 .social a {
-                    padding: 0 20px;
+                    padding: 0 10px;
+                    color: rgba(22, 97, 127, 1);
                     background-color: transparent;
+                    text-shadow: 4px 4px 3px black;
+                }
+                
+                .social a:hover {
+                    color: yellow;
                 }
                 /** ===========LOGO/PHOTOS================ **/
                 
@@ -148,17 +155,20 @@
                 /** ===========TYPOGRAPHY================ **/
                 
                 #myname,
-                .main p {
+                .main p,
+                .nav {
                     color: #FFFFFF;
-                    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+                    text-shadow: 4px 4px 3px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
                     font-family: 'Monday Routines';
                 }
                 
-                .main p {
-                    display: flex;
-                    text-align: center;
-                    font-size: 24px;
-                    font-family: 'Courier New', Courier, monospace;
+                .main p,
+                .nav {
+                    font-family: 'Permanent Marker', cursive;
+                }
+                
+                .copy {
+                    color: white;
                 }
                 /** ===========MEDIA Q's================ **/
                 
