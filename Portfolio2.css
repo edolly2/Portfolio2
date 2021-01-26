@@ -5,12 +5,14 @@
                     overflow: hidden;
                 }
                 
+                html,
                 body {
                     background-image: url("meredblue.png"), radial-gradient(circle, rgba(48, 201, 254, 1) 20%, rgba(243, 208, 156, 1) 67%, rgba(254, 83, 83, 1) 82%, rgba(22, 97, 127, 1) 87%, rgba(24, 25, 25, 1) 100%);
                     ;
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: contain;
+                    height: 100%;
                 }
                 /** ===========GRID================ **/
                 
@@ -29,18 +31,6 @@
                     background-position: right;
                     background-size: contain;
                     max-height: 175px;
-                }
-                
-                .main h1 {
-                    display: flex;
-                    justify-content: flex-end;
-                    font-size: 6vw;
-                }
-                
-                .main p {
-                    display: flex;
-                    text-align: center;
-                    font-size: 24px;
                 }
                 /** ===========NAVIGATION================ **/
                 
@@ -114,6 +104,18 @@
                     transition: margin-left .5s;
                     padding: 16px;
                 }
+                
+                .main h1 {
+                    display: flex;
+                    justify-content: flex-end;
+                    font-size: 6vw;
+                }
+                
+                .main p {
+                    display: flex;
+                    text-align: left;
+                    font-size: 24px;
+                }
                 /** ===========FOOTER================ **/
                 
                 .foot {
@@ -123,17 +125,18 @@
                     bottom: 0;
                     right: 0;
                     width: 100%;
+                    background-color: transparent;
                 }
                 /** ===========SOCIAL MEDIA================ **/
                 
                 .social {
-                    background-color: transparent;
                     height: auto;
                     margin-left: auto;
                 }
                 
                 .social a {
                     padding: 0 20px;
+                    background-color: transparent;
                 }
                 /** ===========LOGO/PHOTOS================ **/
                 
@@ -144,10 +147,18 @@
                 }
                 /** ===========TYPOGRAPHY================ **/
                 
-                #myname {
+                #myname,
+                .main p {
                     color: #FFFFFF;
                     text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
                     font-family: 'Monday Routines';
+                }
+                
+                .main p {
+                    display: flex;
+                    text-align: center;
+                    font-size: 24px;
+                    font-family: 'Courier New', Courier, monospace;
                 }
                 /** ===========MEDIA Q's================ **/
                 
