@@ -2,22 +2,31 @@ body {
     background: radial-gradient(circle, rgba(48, 201, 254, 1) 20%, rgba(243, 208, 156, 1) 67%, rgba(254, 83, 83, 1) 82%, rgba(22, 97, 127, 1) 87%, rgba(24, 25, 25, 1) 100%);
 }
 
-.grid-head h1 {
+.main h1 {
     text-align: center;
     color: white;
     position: relative;
-    top: 0;
-    left: 0;
+    width: 75%;
+    margin-top: -40px;
+    font-size: 6vw;
+    text-shadow: 4px 4px 3px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
 }
 
 
 /*=========FLIP CARDS==========*/
+
+.card-container {
+    display: flex;
+    flex-basis: 100%;
+}
 
 .flip-card {
     background-color: transparent;
     width: 300px;
     height: 300px;
     perspective: 1000px;
+    position: absolute;
+    padding: 0 20px;
 }
 
 .flip-card-inner {
@@ -52,4 +61,20 @@ body {
     background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
+}
+
+#map {
+    left: 19%;
+}
+
+#phone {
+    left: 39%;
+}
+
+#email {
+    left: 59%;
+}
+
+.main i {
+    padding-top: 25%;
 }
