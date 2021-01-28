@@ -221,4 +221,7 @@
                         bottom: 0;
                         right: 0;
                     }
+                    .fas {
+                        font-size: 50px;
+                    }
                 }
