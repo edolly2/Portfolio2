@@ -120,7 +120,7 @@
                     padding: 10px 10px;
                 }
                 
-                .main p {
+                .main-p {
                     display: flex;
                     font-size: 24px;
                     text-align: center;
@@ -172,7 +172,7 @@
                 /** ===========TYPOGRAPHY================ **/
                 
                 #myname,
-                .main p,
+                .main-p,
                 .nav,
                 .about-head {
                     color: #FFFFFF;
@@ -180,7 +180,7 @@
                     font-family: 'Monday Routines';
                 }
                 
-                .main p,
+                .main-p,
                 .nav {
                     font-family: 'Permanent Marker', cursive;
                 }
