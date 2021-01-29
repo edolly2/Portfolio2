@@ -72,3 +72,15 @@
     color: rgb(0, 1, 61);
     padding: 10px 10px;
 }
+
+ul {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        height: calc(350px - 50%);
+        width: calc(800px - 50%);
+        height: 100%;
+    }
+}
