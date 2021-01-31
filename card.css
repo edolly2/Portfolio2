@@ -20,6 +20,7 @@
     position: relative;
     left: 0px;
     margin-top: 50px;
+    max-height: 100%;
 }
 
 .card2 {
@@ -58,6 +59,7 @@
     padding-left: 5%;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    max-height: 100%;
 }
 
 .info-p {
@@ -71,6 +73,7 @@
 .fab-info {
     color: rgb(0, 1, 61);
     padding: 10px 10px;
+    max-height: 100%;
 }
 
 ul {
