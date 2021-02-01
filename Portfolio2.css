@@ -30,9 +30,9 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 0.4fr 2fr;
-    grid-template-rows: 0.4fr 1.1fr 0.1fr;
+    grid-template-rows: 0.3fr 1.1fr 0.1fr;
     gap: 0px 0px;
-    grid-template-areas: "header header" "nav main" "nav footer";
+    grid-template-areas: "header header" "nav main" "footer footer";
 }
 
 .grid-head {
@@ -189,6 +189,7 @@ body {
     color: rgb(0, 1, 61);
     background-color: transparent;
     text-shadow: 4px 4px 3px black;
+    font-size: small;
 }
 
 .social a:hover {
@@ -264,16 +265,19 @@ body {
         display: none;
     }
     .main h1 {
-        font-size: 43px;
+        font-size: 5em;
     }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 500px) {
     .social a {
         font-size: 9px;
     }
     .fas {
         font-size: 50px;
+    }
+    .main h1 {
+        padding-bottom: 10%;
     }
 }
 
