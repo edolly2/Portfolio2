@@ -1,0 +1,433 @@
+/* ===========ALL============= */
+
+
+/* ===========ALL============= */
+
+
+/* ===========ALL============= */
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* ===========BACKGROUNDS============= */
+
+html,
+body {
+    background-image: url("meredblue.png"), radial-gradient(circle, rgba(48, 201, 254, 1) 20%, rgba(243, 208, 156, 1) 67%, rgba(254, 83, 83, 1) 82%, rgba(22, 97, 127, 1) 87%, rgba(24, 25, 25, 1) 100%);
+    ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+}
+
+.grid-head {
+    background-image: url('logologo5.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    max-height: 175px;
+}
+
+.nav {
+    background: rgb(24, 25, 25);
+    background: linear-gradient(90deg, rgba(24, 25, 25, 1) 0%, rgba(22, 97, 127, 1) 100%);
+}
+
+
+/* ==============TYPOGRAPHY=============== */
+
+
+/* =============COLORS=================== */
+
+#myname,
+.main-p,
+.nav,
+.nav a,
+.about-head,
+.contact-head,
+#copy,
+.info,
+.info-p,
+.title {
+    color: #FFFFFF;
+}
+
+.nav a:hover,
+.social a:hover {
+    color: yellow;
+}
+
+.fas,
+.card {
+    color: rgba(254, 83, 83, 1);
+}
+
+.fab-info,
+.social a {
+    color: rgb(0, 1, 61);
+}
+
+.social a {
+    background-color: transparent;
+}
+
+
+/* =============SHADOWS================== */
+
+.nav {
+    box-shadow: 5px 5px 20px black;
+}
+
+#myname,
+.main-p,
+.nav,
+.about-head,
+.contact-head {
+    text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
+}
+
+.social a {
+    text-shadow: 4px 4px 3px black;
+}
+
+.card {
+    box-shadow: -5px 5px 10px #000;
+}
+
+
+/* ===========GRID CONTAINER============= */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.4fr 2fr;
+    grid-template-rows: 0.4fr 1.1fr 0.1fr;
+    gap: 0px 0px;
+    grid-template-areas: "header header" "nav main" "nav footer";
+}
+
+
+/* ===========GRID ITEMS============= */
+
+.grid-head {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+    min-height: 400px;
+}
+
+.foot {
+    grid-area: footer;
+}
+
+
+/* ===========HEADERS============= */
+
+.about-head,
+.contact-head {
+    text-align: center;
+    font-size: 6vw;
+    height: 100%;
+}
+
+
+/* ===========NAVIGATION================ */
+
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.nav a {
+    padding: 7vh 10px;
+    text-decoration: none;
+    font-size: 5vh;
+    display: block;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    text-decoration: line-through;
+}
+
+.nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* ===========NAV BUTTON================ */
+
+.fas {
+    position: absolute;
+    animation-name: fas;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+
+/* ===========MAIN================ */
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.main h1 {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 6vw;
+    padding: 10px 10px;
+}
+
+.main-p {
+    display: flex;
+    font-size: 24px;
+    text-align: center;
+    padding-left: 5px;
+    line-height: 1.5em;
+}
+
+
+/* ===========FOOTER================ */
+
+.foot {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: transparent;
+}
+
+#copy {
+    position: absolute;
+    padding-left: 10px;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* ===========SOCIAL MEDIA================ */
+
+.social {
+    height: auto;
+    margin-left: auto;
+}
+
+.social a {
+    padding: 0 15px;
+}
+
+
+/* ===========LOGO/PHOTOS================ */
+
+#logo {
+    display: flex;
+    width: 100px;
+    margin: auto;
+}
+
+
+/* ===========TYPOGRAPHY================ */
+
+#myname,
+.main-p,
+.nav,
+.about-head,
+.contact-head {
+    font-family: 'Monday Routines';
+}
+
+.main-p,
+.nav {
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+/* =============EVERY PAGE BASE STYLE================ */
+
+
+/*                       ABOVE                        */
+
+
+/*                       ABOVE                        */
+
+
+/* ================================================== */
+
+
+/** ===========MEDIA Q's================ **/
+
+@media screen and (max-height: 450px) {
+    .nav {
+        padding-top: 15px;
+    }
+    .nav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        height: calc(350px - 50%);
+        width: calc(800px - 50%);
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #copy {
+        display: none;
+    }
+    .main h1 {
+        font-size: 43px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .social a {
+        font-size: 9px;
+    }
+    .fas {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-height: 480px) {
+    * {
+        overflow: visible;
+    }
+    .foot {
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+    .fas {
+        font-size: 50px;
+    }
+    .social a {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .social a {
+        font-size: 6px;
+    }
+}
+
+
+/* =============ABOUT ME CARD STYLE================== */
+
+
+/*                       BELOW                        */
+
+
+/*                       BELOW                        */
+
+
+/* ================================================== */
+
+.card-container {
+    position: absolute;
+    height: 350px;
+    width: 800px;
+    left: calc(50% - 425px);
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    height: 280px;
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 50px;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+    margin-top: 50px;
+    max-height: 100%;
+}
+
+.card2 {
+    display: block;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+}
+
+.card:hover~.card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+}
+
+.title {
+    text-align: center;
+    font-weight: 300;
+    position: absolute;
+    top: 15px;
+    text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
+    width: 100%;
+}
+
+.info,
+.info-p {
+    font-size: 15px;
+    margin-top: 30%;
+    padding-left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    max-height: 100%;
+}
+
+.info-p {
+    font-size: 13px;
+}
+
+.fab-div {
+    margin-top: 40%;
+}
+
+.fab-info {
+    padding: 10px 10px;
+    max-height: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
