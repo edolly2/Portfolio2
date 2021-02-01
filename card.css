@@ -2,7 +2,6 @@
     position: absolute;
     height: 350px;
     width: 800px;
-    top: 150px;
     left: calc(50% - 425px);
     display: flex;
     justify-content: center;
