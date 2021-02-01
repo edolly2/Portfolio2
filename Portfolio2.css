@@ -5,7 +5,6 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 *,
@@ -22,10 +21,6 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
-}
-
-body {
-    overflow: hidden;
 }
 
 
@@ -46,6 +41,13 @@ body {
     background-position: right;
     background-size: contain;
     max-height: 175px;
+}
+
+.about-head,
+.contact-head {
+    text-align: center;
+    font-size: 6vw;
+    height: 100%;
 }
 
 
@@ -207,7 +209,8 @@ body {
 #myname,
 .main-p,
 .nav,
-.about-head {
+.about-head,
+.contact-head {
     color: #FFFFFF;
     text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
     font-family: 'Monday Routines';

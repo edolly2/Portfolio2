@@ -8,12 +8,6 @@ body {
     height: 100%;
 }
 
-.about-head {
-    text-align: center;
-    font-size: 6vw;
-    height: 100%;
-}
-
 .main-about {
     min-height: 300px;
 }
