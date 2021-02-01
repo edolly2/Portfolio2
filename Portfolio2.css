@@ -215,11 +215,13 @@ body {
     color: #FFFFFF;
     text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
     font-family: 'Monday Routines';
+    font-weight: bold;
 }
 
 .main-p,
 .nav {
     font-family: 'Permanent Marker', cursive;
+    font-weight: normal;
 }
 
 
