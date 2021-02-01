@@ -2,6 +2,7 @@
 
 *,
 html {
+    font-size: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -62,7 +63,7 @@ body {
     left: 0;
     background: rgb(24, 25, 25);
     background: linear-gradient(90deg, rgba(24, 25, 25, 1) 0%, rgba(22, 97, 127, 1) 100%);
-    overflow-x: hidden;
+    overflow: hidden;
     transition: 0.5s;
     grid-area: nav;
     box-shadow: 5px 5px 20px black;
@@ -136,19 +137,19 @@ body {
 
 #main {
     transition: margin-left .5s;
-    padding: 16px;
+    padding: 5%;
 }
 
 .main h1 {
     display: flex;
     justify-content: flex-end;
-    font-size: 6vw;
-    padding: 10px 10px;
+    font-size: 6em;
+    padding: 4%;
 }
 
 .main-p {
     display: flex;
-    font-size: 24px;
+    font-size: 1.5em;
     text-align: center;
     padding-left: 5px;
     line-height: 1.5em;
@@ -169,7 +170,7 @@ body {
 
 #copy {
     position: absolute;
-    padding-left: 10px;
+    padding-left: 2%;
     color: white;
     bottom: 0;
     left: 0;
@@ -250,6 +251,9 @@ body {
         height: calc(350px - 50%);
         width: calc(800px - 50%);
         height: 100%;
+    }
+    html {
+        font-size: 80%;
     }
 }
 

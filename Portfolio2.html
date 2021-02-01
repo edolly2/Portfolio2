@@ -38,7 +38,7 @@
         <p class="main-p">My name is Eric Dollinger and I am a Front End Developer.<br/> I am very passionate about what I do.<br/> Look around and find out more!
         </p>
     </main>
-    <footer class="foot">
+    <footer class="foot" id="foot">
         <p id="copy">&#169;Copyright 2021 www.Dollyllama.ninja</p>
         <div class="social">
             <a href="https://www.facebook.com/dev.dollinger" alt="My Facebook Page" target="_blank"><i class="fab fa-facebook-square fa-5x"></i></a>
@@ -51,12 +51,16 @@
     <script>
         function openNav() {
             document.getElementById("myNav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "320px";
+            document.getElementById("main").style.marginLeft = "100%";
+            document.getElementById("main").style.display = "none";
+            document.getElementById("foot").style.display = "none";
         }
 
         function closeNav() {
             document.getElementById("myNav").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("main").style.display = "grid";
+            document.getElementById("foot").style.display = "flex";
         }
     </script>
 </body>
