@@ -1,5 +1,11 @@
+html,
 body {
     background: radial-gradient(circle, rgba(48, 201, 254, 1) 20%, rgba(243, 208, 156, 1) 67%, rgba(254, 83, 83, 1) 82%, rgba(22, 97, 127, 1) 87%, rgba(24, 25, 25, 1) 100%);
+    ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
 }
 
 .main h1 {
@@ -67,7 +73,7 @@ body {
     left: 19%;
 }
 
-#phone {
+#tele {
     left: 39%;
 }
 
