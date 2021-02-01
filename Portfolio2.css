@@ -303,7 +303,7 @@ body {
 
 /* ================================================== */
 
-.container {
+.card-container {
     position: absolute;
     height: 350px;
     width: 800px;
