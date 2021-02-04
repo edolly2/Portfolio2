@@ -318,8 +318,8 @@ body {
 
 .card-container {
     position: absolute;
-    height: 350px;
-    width: 800px;
+    height: 58%;
+    width: 59%;
     left: calc(50% - 425px);
     display: flex;
     justify-content: center;
@@ -327,8 +327,8 @@ body {
 
 .card {
     display: flex;
-    height: 280px;
-    width: 200px;
+    height: 90%;
+    width: 25%;
     background: rgb(254, 83, 83);
     border-radius: 10px;
     box-shadow: -5px 5px 10px #000;
