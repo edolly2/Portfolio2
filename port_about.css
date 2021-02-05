@@ -11,3 +11,8 @@ body {
 .main-about {
     min-height: 300px;
 }
+
+h3 {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: normal;
+}

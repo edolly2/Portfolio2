@@ -1,0 +1,32 @@
+    .project-main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .project-list {
+        display: flex;
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .project-list-top,
+    .project-list-middle,
+    .project-list-bottom {
+        color: #FFFFFF;
+        text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
+        font-family: 'Permanent Marker', cursive;
+        font-weight: normal;
+        padding: 0 30px;
+        background-color: rgba(22, 97, 127, 1);
+    }
+    
+    .thumb {
+        width: 100%;
+        height: auto;
+    }
+    
+    section {
+        width: 33.3%;
+        border: 5px solid black;
+    }

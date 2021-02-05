@@ -54,6 +54,7 @@ body {
 }
 
 .flip-card-front {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(0, 1, 61);
     color: black;
     justify-content: center;
@@ -65,10 +66,13 @@ body {
     color: black;
     transform: rotateY(180deg);
     display: block;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .flip-card-back h2 {
-    background-color: rgb(0, 1, 61);
+    text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
+    font-family: 'Permanent Marker', cursive;
+    background-color: rgba(22, 97, 127, 1);
     color: white;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
