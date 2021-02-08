@@ -1,0 +1,49 @@
+body {
+    line-height: 1em;
+}
+
+table,
+th,
+tr,
+td {
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgba(254, 83, 83, 0.5);
+    width: 27%;
+    text-align: center;
+}
+
+td {
+    background-color: rgba(22, 97, 127, 0.3);
+    vertical-align: baseline;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: -10%;
+}
+
+p,
+ul {
+    font-size: 1em;
+    padding: 0px 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+th {
+    font-family: 'Permanent Marker';
+    color: #FFFFFF;
+    text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 40px;
+    vertical-align: middle;
+}
