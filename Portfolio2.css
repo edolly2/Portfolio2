@@ -29,26 +29,24 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 0.4fr 2fr;
+    grid-template-columns: 0.4fr 2fr 0.4fr;
     grid-template-rows: 0.3fr 1.1fr 0.1fr;
     gap: 0px 0px;
-    grid-template-areas: "header header""main main""footer footer";
+    grid-template-areas: "header header header""main main main""footer footer footer";
 }
 
 .grid-head {
     grid-area: header;
-    background-image: url('logologo5.png');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-    max-height: 175px;
+    max-height: 125px;
 }
 
 .about-head,
 .contact-head {
     text-align: center;
-    font-size: 6vw;
+    font-size: 7vw;
     height: 100%;
+    width: 50%;
+    margin: auto;
 }
 
 
@@ -105,27 +103,6 @@ body {
 
 
 /* ===========ANIMATION================ */
-
-@keyframes fas {
-    0% {
-        color: white;
-        text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
-    }
-    25% {
-        color: rgb(0, 1, 61);
-    }
-    50% {
-        color: white;
-        text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
-    }
-    75% {
-        color: rgb(0, 1, 61);
-    }
-    100% {
-        color: white;
-        text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
-    }
-}
 
 
 /* ===========MAIN================ */
@@ -200,9 +177,10 @@ body {
 /* ===========LOGO/PHOTOS================ */
 
 #logo {
+    grid-area: logo;
     display: flex;
-    width: 100px;
-    margin: auto;
+    width: 5em;
+    margin-left: auto;
 }
 
 
@@ -223,6 +201,27 @@ body {
 .nav {
     font-family: 'Permanent Marker', cursive;
     font-weight: normal;
+}
+
+@keyframes fas {
+    0% {
+        color: white;
+        text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
+    }
+    25% {
+        color: rgb(0, 1, 61);
+    }
+    50% {
+        color: white;
+        text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
+    }
+    75% {
+        color: rgb(0, 1, 61);
+    }
+    100% {
+        color: white;
+        text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
+    }
 }
 
 

@@ -30,3 +30,11 @@
         width: 33.3%;
         border: 5px solid black;
     }
+    
+    #logo {
+        display: flex;
+        width: 5em;
+        margin-left: auto;
+        position: relative;
+        top: -100%;
+    }

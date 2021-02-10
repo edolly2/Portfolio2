@@ -98,9 +98,17 @@ body {
 
 .gmap_canvas {
     overflow: hidden;
-    background: none!important;
+    background: none !important;
     height: 90.5%;
     width: 300px;
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
+}
+
+#logo {
+    display: flex;
+    width: 5em;
+    margin-left: auto;
+    position: relative;
+    top: -100%;
 }
