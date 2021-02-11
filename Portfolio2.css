@@ -32,8 +32,9 @@ body {
     ;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 100%;
+    overflow: hidden;
 }
 
 header h1 {
@@ -126,10 +127,10 @@ header h1 {
 
 /* ---NAV BUTTON--- */
 
-.fas {
+.arrow {
     position: absolute;
     color: rgba(254, 83, 83, 1);
-    animation-name: fas;
+    animation-name: arrow-fas;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: normal;
@@ -283,7 +284,7 @@ header h1 {
 
 /* ================================================== */
 
-@keyframes fas {
+@keyframes arrow-fas {
     0% {
         color: white;
         text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
