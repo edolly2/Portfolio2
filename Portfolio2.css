@@ -1,4 +1,16 @@
-/* ===========ALL============= */
+/* =============EVERY PAGE BASE STYLE================ */
+
+
+/*                       BELOW                        */
+
+
+/*                                                    */
+
+
+/* ================================================== */
+
+
+/* ---ALL--- */
 
 *,
 html {
@@ -24,13 +36,26 @@ body {
     height: 100%;
 }
 
+header h1 {
+    padding-top: 30px;
+}
 
-/* ===========GRID================ */
+
+/* ======================GRID======================== */
+
+
+/*                      BELOW                         */
+
+
+/*                                                    */
+
+
+/* ================================================== */
 
 .grid-container {
     display: grid;
     grid-template-columns: 0.4fr 2fr 0.4fr;
-    grid-template-rows: 0.3fr 1.1fr 0.1fr;
+    grid-template-rows: 0.3fr 2fr 0.1fr;
     gap: 0px 0px;
     grid-template-areas: "header header header""main main main""footer footer footer";
 }
@@ -50,7 +75,16 @@ body {
 }
 
 
-/* ===========NAVIGATION================ */
+/* ====================NAVIGATION==================== */
+
+
+/*                       BELOW                        */
+
+
+/*                                                    */
+
+
+/* ================================================== */
 
 .nav {
     height: 100%;
@@ -90,7 +124,7 @@ body {
 }
 
 
-/* ===========NAV BUTTON================ */
+/* ---NAV BUTTON--- */
 
 .fas {
     position: absolute;
@@ -102,10 +136,16 @@ body {
 }
 
 
-/* ===========ANIMATION================ */
+/* ======================MAIN======================== */
 
 
-/* ===========MAIN================ */
+/*                       BELOW                        */
+
+
+/*                                                    */
+
+
+/* ================================================== */
 
 .main {
     grid-area: main;
@@ -133,16 +173,20 @@ body {
 }
 
 
-/* ===========FOOTER================ */
+/* =====================FOOTER======================= */
+
+
+/*                       BELOW                        */
+
+
+/*                                                    */
+
+
+/* ================================================== */
 
 .foot {
     display: flex;
     grid-area: footer;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    background-color: transparent;
 }
 
 #copy {
@@ -154,7 +198,7 @@ body {
 }
 
 
-/* ===========SOCIAL MEDIA================ */
+/* ---SOCIAL MEDIA--- */
 
 .social {
     height: auto;
@@ -174,7 +218,16 @@ body {
 }
 
 
-/* ===========LOGO/PHOTOS================ */
+/* ===================LOGO/PHOTOS==================== */
+
+
+/*                       BELOW                        */
+
+
+/*                                                    */
+
+
+/* ================================================== */
 
 #logo {
     grid-area: logo;
@@ -184,7 +237,16 @@ body {
 }
 
 
-/* ===========TYPOGRAPHY================ */
+/* ====================TYPOGRAPHY==================== */
+
+
+/*                       BELOW                        */
+
+
+/*                                                    */
+
+
+/* ================================================== */
 
 #myname,
 .main-p,
@@ -202,6 +264,24 @@ body {
     font-family: 'Permanent Marker', cursive;
     font-weight: normal;
 }
+
+
+/* =================================================== */
+
+
+/* ===================================================*/
+
+
+/* ====================ANIMATION===================== */
+
+
+/*                       BELOW                        */
+
+
+/*                                                    */
+
+
+/* ================================================== */
 
 @keyframes fas {
     0% {
@@ -225,39 +305,19 @@ body {
 }
 
 
-/* =============EVERY PAGE BASE STYLE================ */
+/* =====================MEDIA Qs===================== */
 
 
-/*                       ABOVE                        */
+/*                       BELOW                        */
 
 
-/*                       ABOVE                        */
+/*                                                    */
 
 
 /* ================================================== */
 
 
-/** ===========MEDIA Q's================ **/
-
-@media screen and (max-height: 450px) {
-    .nav {
-        padding-top: 15px;
-    }
-    .nav a {
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .container {
-        height: calc(350px - 50%);
-        width: calc(800px - 50%);
-        height: 100%;
-    }
-    html {
-        font-size: 80%;
-    }
-}
+/* ---MAX-WIDTH */
 
 @media screen and (max-width: 750px) {
     #copy {
@@ -265,6 +325,18 @@ body {
     }
     .main h1 {
         font-size: 5em;
+    }
+    .about-head {
+        font-size: 9vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 80%;
+    }
+    .about-head {
+        font-size: 10vw;
     }
 }
 
@@ -278,7 +350,22 @@ body {
     .main h1 {
         padding-bottom: 10%;
     }
+    .about-head {
+        font-size: 40px;
+    }
 }
+
+@media screen and (max-width: 380px) {
+    .social a {
+        font-size: 6px;
+    }
+    .about-head {
+        font-size: 30px;
+    }
+}
+
+
+/* ---MAX-HEIGHT--- */
 
 @media screen and (max-height: 480px) {
     * {
@@ -295,103 +382,10 @@ body {
     .social a {
         font-size: 8px;
     }
-}
-
-@media screen and (max-width: 320px) {
-    .social a {
-        font-size: 6px;
+    .nav {
+        padding-top: 15px;
     }
-}
-
-
-/* =============ABOUT ME CARD STYLE================== */
-
-
-/*                       BELOW                        */
-
-
-/*                       BELOW                        */
-
-
-/* ================================================== */
-
-.card-container {
-    position: absolute;
-    height: 58%;
-    width: 59%;
-    left: calc(50% - 425px);
-    display: flex;
-    justify-content: center;
-}
-
-.card {
-    display: flex;
-    height: 90%;
-    width: 25%;
-    background: rgb(254, 83, 83);
-    border-radius: 10px;
-    box-shadow: -5px 5px 10px #000;
-    margin-left: 50px;
-    transition: 0.4s ease-out;
-    position: relative;
-    left: 0px;
-    margin-top: 50px;
-    max-height: 100%;
-}
-
-.card2 {
-    display: block;
-}
-
-.card:not(:first-child) {
-    margin-left: -50px;
-}
-
-.card:hover {
-    transform: translateY(-20px);
-    transition: 0.4s ease-out;
-}
-
-.card:hover~.card {
-    position: relative;
-    left: 50px;
-    transition: 0.4s ease-out;
-}
-
-.title {
-    text-align: center;
-    color: white;
-    font-weight: 300;
-    position: absolute;
-    top: 15px;
-    text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
-    width: 100%;
-}
-
-.info,
-.info-p {
-    font-size: 15px;
-    margin-top: 30%;
-    padding-left: 5%;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    max-height: 100%;
-}
-
-.info-p {
-    font-size: 13px;
-}
-
-.fab-div {
-    margin-top: 40%;
-}
-
-.fab-info {
-    color: rgb(0, 1, 61);
-    padding: 10px 10px;
-    max-height: 100%;
-}
-
-ul {
-    list-style-type: none;
+    .nav a {
+        font-size: 18px;
+    }
 }
