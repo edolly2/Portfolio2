@@ -43,6 +43,7 @@ td {
 /* } */
 
 .bio-table {
+    display: table;
     height: 80%;
     margin: auto;
     position: relative;
