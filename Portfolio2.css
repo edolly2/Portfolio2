@@ -129,7 +129,7 @@ header h1 {
 
 .arrow {
     position: absolute;
-    color: rgba(254, 83, 83, 1);
+    color: #fe5353;
     animation-name: arrow-fas;
     animation-duration: 2s;
     animation-iteration-count: infinite;
