@@ -21,10 +21,10 @@ body {
 
 .bio-p {
     font-size: 1.2em;
-    color: white;
+    color: yellow;
     padding: 0 50px;
     text-align: center;
-    text-shadow: 2px 2px 2px black, 2px 2px 0, 2px -2px 0 #fe5353, -2px 2px 0 #fe5353, -2px -2px 0 #fe5353, 2px 0px 0 #fe5353, 0px 2px 0 #fe5353, -2px 0px 0 #fe5353, 0px -2px 0 #fe5353;
+    text-shadow: 4px 4px 5px black, 2px 2px 2px rgb(0, 1, 61), 2px -2px 2px rgb(0, 1, 61), -2px 2px 2px rgb(0, 1, 61), -2px -2px 2px rgb(0, 1, 61), 2px 0px 2px rgb(0, 1, 61), 0px 2px 2px rgb(0, 1, 61), -2px 0px 2px rgb(0, 1, 61), 0px -2px 2px rgb(0, 1, 61), 0px 0px 2px rgb(0, 1, 61), 2px 0px 2px rgb(0, 1, 61);
 }
 
 a {
@@ -50,7 +50,7 @@ a {
 h2 {
     font-family: 'Permanent Marker';
     color: #FFFFFF;
-    text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
+    text-shadow: 4px 4px 5px black, 2px 2px 2px rgb(0, 1, 61), 2px -2px 2px rgb(0, 1, 61), -2px 2px 2px rgb(0, 1, 61), -2px -2px 2px rgb(0, 1, 61), 2px 0px 2px rgb(0, 1, 61), 0px 2px 2px rgb(0, 1, 61), -2px 0px 2px rgb(0, 1, 61), 0px -2px 2px rgb(0, 1, 61), 0px 0px 2px rgb(0, 1, 61), 2px 0px 2px rgb(0, 1, 61);
     font-size: 2.3vw;
     font-weight: bold;
     text-align: center;
