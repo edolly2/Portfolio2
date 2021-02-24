@@ -16,10 +16,22 @@
         top: -100%;
     }
     
+    main {
+        position: absolute;
+        left: 25%;
+        right: 25%;
+        top: 15%;
+        bottom: 15%;
+    }
+    
     .slider {
         width: 300px;
         text-align: center;
         overflow: hidden;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
     }
     
     .slides {
@@ -38,7 +50,7 @@
     }
     
     .slides::-webkit-scrollbar-thumb {
-        background: black;
+        background: #00013d;
         border-radius: 10px;
     }
     
@@ -68,13 +80,14 @@
         display: inline-flex;
         width: 1.5rem;
         height: 1.5rem;
-        background: white;
+        background: #00013d;
         text-decoration: none;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
         margin: 0 0 0.5rem 0;
         position: relative;
+        color: white;
     }
     
     .slider>a:active {
@@ -82,5 +95,5 @@
     }
     
     .slider>a:focus {
-        background: #000;
+        background: #00013d;
     }
