@@ -1,50 +1,86 @@
-html,
-body {
-    background: radial-gradient(circle, rgba(48, 201, 254, 1) 20%, rgba(243, 208, 156, 1) 67%, rgba(254, 83, 83, 1) 82%, rgba(22, 97, 127, 1) 87%, rgba(24, 25, 25, 1) 100%);
-    ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100%;
-}
-
-.project-main {
-    display: flex;
-    flex-direction: column;
-}
-
-.project-list {
-    display: flex;
-    width: 90%;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-.project-list-top,
-.project-list-middle,
-.project-list-bottom {
-    color: #FFFFFF;
-    text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
-    font-family: 'Permanent Marker', cursive;
-    font-weight: normal;
-    padding: 0 30px;
-    background-color: rgba(22, 97, 127, 1);
-}
-
-.thumb {
-    width: 100%;
-    height: auto;
-}
-
-section {
-    width: 33.3%;
-    border: 5px solid black;
-}
-
-#logo {
-    display: flex;
-    width: 5em;
-    margin-left: auto;
-    position: relative;
-    top: -100%;
-}
+    html,
+    body {
+        background: radial-gradient(circle, rgba(48, 201, 254, 1) 20%, rgba(243, 208, 156, 1) 67%, rgba(254, 83, 83, 1) 82%, rgba(22, 97, 127, 1) 87%, rgba(24, 25, 25, 1) 100%);
+        ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100%;
+    }
+    
+    #logo {
+        display: flex;
+        width: 5em;
+        margin-left: auto;
+        position: relative;
+        top: -100%;
+    }
+    
+    .slider {
+        width: 300px;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .slides {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-points-x: repeat(300px);
+        scroll-snap-type: mandatory;
+    }
+    
+    .slides::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .slides::-webkit-scrollbar-thumb {
+        background: black;
+        border-radius: 10px;
+    }
+    
+    .slides::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    .slides>div {
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        width: 300px;
+        height: 300px;
+        margin-right: 50px;
+        border-radius: 10px;
+        background: #eee;
+        transform-origin: center center;
+        transform: scale(1);
+        transition: transform 0.5s;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100px;
+    }
+    
+    .slider>a {
+        display: inline-flex;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: white;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0 0 0.5rem 0;
+        position: relative;
+    }
+    
+    .slider>a:active {
+        top: 1px;
+    }
+    
+    .slider>a:focus {
+        background: #000;
+    }
