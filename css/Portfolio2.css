@@ -240,6 +240,7 @@ header h1 {
     grid-area: logo;
     display: flex;
     width: 5em;
+    height: auto;
     margin-left: auto;
     padding-top: 10px;
     padding-right: 10px;
