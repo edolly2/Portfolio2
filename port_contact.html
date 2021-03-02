@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="css/Portfolio2.css">
     <link rel="stylesheet" href="css/port_contact.css">
     <script src="js/port.js" defer></script>
+    <style>
+        #contact {
+            color: yellow;
+            text-decoration: line-through;
+        }
+    </style>
 
 </head>
 
@@ -72,6 +78,22 @@
                     </div>
                     <div class="flip-card-back">
                         <h2>Other Ways Of Contact</h2>
+                        <button class="open-button" onclick="openForm()">Open Form</button>
+
+                        <div class="form-popup" id="myForm">
+                            <form action="/action_page.php" class="form-container">
+                                <h1>Login</h1>
+
+                                <label for="email"><b>Email</b></label>
+                                <input type="text" placeholder="Enter Email" name="email" required>
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                <button type="submit" class="btn">Login</button>
+                                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                            </form>
+                        </div>
 
                     </div>
                 </div>

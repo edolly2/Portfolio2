@@ -14,3 +14,11 @@ window.addEventListener('orientationchange', function(event) {
         event.target.screen.orientation.angle
     );
 });
+
+function openForm() {
+    document.getElementById('myForm').style.display = 'block';
+}
+
+function closeForm() {
+    document.getElementById('myForm').style.display = 'none';
+}

@@ -213,12 +213,16 @@ header h1 {
     padding: 0 15px;
     color: rgb(0, 1, 61);
     background-color: transparent;
-    text-shadow: 4px 4px 3px black;
+    text-shadow: 4px 4px 7px black;
     font-size: small;
 }
 
 .social a:hover {
     color: yellow;
+}
+
+.social i:hover {
+    transform: translate(-5px, -5px);
 }
 
 
@@ -267,6 +271,10 @@ header h1 {
 .nav {
     font-family: 'Permanent Marker', cursive;
     font-weight: normal;
+}
+
+.nav a:hover {
+    text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61), 0px 0px 10px white;
 }
 
 
