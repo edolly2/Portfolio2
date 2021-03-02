@@ -37,8 +37,7 @@ a {
     text-align: center;
 }
 
-.certs2,
-.certs1 {
+.certs {
     padding: 0 20px;
 }
 
@@ -54,11 +53,19 @@ h2 {
     font-size: 2.3vw;
     font-weight: bold;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0 20px 0;
     /* vertical-align: middle; */
 }
 
 .fab-info {
     color: #00013d;
     padding: 10px 10px;
+}
+
+.line {
+    max-height: 2px;
+    min-height: 2px;
+    border: 2px solid white;
+    width: 50%;
+    margin: 0 auto;
 }

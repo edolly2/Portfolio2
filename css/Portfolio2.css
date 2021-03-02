@@ -37,7 +37,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 header h1 {
@@ -137,6 +137,7 @@ header h1 {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: normal;
+    padding-left: 10px;
 }
 
 
@@ -153,7 +154,6 @@ header h1 {
 
 .main {
     grid-area: main;
-    min-height: 400px;
 }
 
 #main {
@@ -194,11 +194,9 @@ header h1 {
 }
 
 #copy {
-    position: relative;
     padding-left: 2%;
     color: white;
-    bottom: -50%;
-    left: 0;
+    align-self: flex-end;
 }
 
 
@@ -207,14 +205,15 @@ header h1 {
 .social {
     height: auto;
     margin-left: auto;
+    padding-top: 10px;
 }
 
 .social a {
     padding: 0 15px;
-    color: rgb(0, 1, 61);
-    background-color: transparent;
+    color: white;
     text-shadow: 4px 4px 7px black;
     font-size: small;
+    position: relative;
 }
 
 .social a:hover {
@@ -242,6 +241,8 @@ header h1 {
     display: flex;
     width: 5em;
     margin-left: auto;
+    padding-top: 10px;
+    padding-right: 10px;
 }
 
 
