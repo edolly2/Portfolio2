@@ -112,7 +112,7 @@ header h1 {
     font-size: 5vh;
     color: #fff;
     display: block;
-    transition: 0.3s;
+    transition: all 0.2s linear;
 }
 
 .nav a:hover {
@@ -215,6 +215,7 @@ header h1 {
     text-shadow: 4px 4px 7px black;
     font-size: small;
     position: relative;
+    transition: all 0.2s linear;
 }
 
 .social a:hover {
