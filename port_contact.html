@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/Portfolio2.css">
     <link rel="stylesheet" href="css/port_contact.css">
+    <link rel="stylesheet" href="css/port_contact_form.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js" defer></script>
     <script src="js/port.js" defer></script>
     <style>
         #contact {
@@ -26,12 +29,15 @@
 </head>
 
 
+
+
 <body class="grid-container">
+
     <header class="grid-head">
         <span style="font-size:25px;cursor:pointer" onclick="openNav()"><i
                 class="arrow fas fa-angle-double-right fa-4x"></i></span>
         <h1 class="contact-head">Contact Information</h1>
-        <a href="Portfolio2.html" id="home"><img src="images/logologo5.png" alt="Eric Dollinger Logo" id="logo" height="113" width="80"></a>
+        <a href="Portfolio2.html"><img src="images/logologo5.png" alt="Eric Dollinger Logo" id="logo" height="113" width="80"></a>
     </header>
     <aside>
         <nav id="myNav" class="nav" role="navigation" aria-label="main menu">
@@ -43,6 +49,45 @@
         </nav>
     </aside>
     <main class="main" id="main">
+        <div id="myModal" class="modal hidden">
+
+            <!-- FORM -->
+            <div class="modal-content">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your First Name.." required>
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your Last Name.." required>
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="tel" placeholder="Your Phone Number.." required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email.." required>
+
+                    <label for="comments">Review/Comments</label>
+                    <textarea id="comments" name="comments" rows="4" cols="50">
+                    At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+                    </textarea>
+
+                    <input type="submit" value="Submit" id="submit">
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/dev.dollinger" alt="My Facebook Page" target="_blank"><i
+                                class="fab fa-facebook-square fa-5x"></i></a>
+                        <a href="https://github.com/edolly2" alt="My GitHub Page" target="_blank"><i
+                                class="fab fa-github-square fa-5x"></i></a>
+                        <a href="https://stackexchange.com/users/20534397/edolly2" alt="My Stack Overflow Page" target="_blank"><i class="fab fa-stack-overflow fa-5x"></i></a>
+                        <a href="https://twitter.com/DevDollinger" alt="My Twitter Page" target="_blank"><i
+                                class="fab fa-twitter-square fa-5x"></i></a>
+                        <a href="https://www.linkedin.com/in/eric-dollinger-967876202/" alt="My Linkedin Page" target="_blank"><i class="fab fa-linkedin fa-5x"></i></a>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
         <div class="card-container">
             <div class="flip-card" id="tele">
                 <div class="flip-card-inner">
@@ -78,22 +123,9 @@
                     </div>
                     <div class="flip-card-back">
                         <h2>Other Ways Of Contact</h2>
-                        <button class="open-button" onclick="openForm()">Open Form</button>
+                        <button class="form-btn" id="form-btn">Click to Get in Touch!</button>
 
-                        <div class="form-popup" id="myForm">
-                            <form action="/action_page.php" class="form-container">
-                                <h1>Login</h1>
 
-                                <label for="email"><b>Email</b></label>
-                                <input type="text" placeholder="Enter Email" name="email" required>
-
-                                <label for="psw"><b>Password</b></label>
-                                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                                <button type="submit" class="btn">Login</button>
-                                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                            </form>
-                        </div>
 
                     </div>
                 </div>
