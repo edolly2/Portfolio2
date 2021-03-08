@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
+    overflow: hidden;
 }
 
 #logo {
