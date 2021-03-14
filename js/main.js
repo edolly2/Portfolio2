@@ -10,4 +10,5 @@ $(document).ready(() => {
     $('#submit').on('click', () => {
         alert('form sent');
     });
+
 });
