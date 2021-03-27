@@ -166,7 +166,7 @@
         }
         
         .social a {
-            padding: 0 15px;
+            padding: 0 10px;
             color: white;
             text-shadow: 4px 4px 7px black;
             font-size: small;
@@ -279,12 +279,12 @@
             .about-head {
                 font-size: 10vw;
             }
-        }
-        
-        @media screen and (max-width: 500px) {
             .social a {
                 font-size: 9px;
             }
+        }
+        
+        @media screen and (max-width: 500px) {
             .fas {
                 font-size: 50px;
             }
