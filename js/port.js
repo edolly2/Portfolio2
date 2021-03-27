@@ -22,10 +22,3 @@ function openForm() {
 function closeForm() {
     document.getElementById('myForm').style.display = 'none';
 }
-
-
-var d = new Date();
-var m = d.getMonth();
-var w = d.getDate();
-var y = d.getFullYear();
-document.getElementById("time").innerHTML = m + 1 + '/' + w + '/' + y;
