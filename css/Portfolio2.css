@@ -28,7 +28,7 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
-            height: 100vh;
+            height: 100%;
             overflow-y: auto;
             overflow-x: hidden;
         }
