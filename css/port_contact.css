@@ -6,7 +6,8 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     height: 100%;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 
@@ -96,21 +97,6 @@ p a {
 
 #email {
     padding: 0 5%;
-}
-
-.mapouter {
-    text-align: center;
-    height: 40vh;
-    width: 20vw;
-}
-
-.gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    height: 90.5%;
-    width: 20vw;
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius: 12px;
 }
 
 #logo {
