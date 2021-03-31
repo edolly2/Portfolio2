@@ -19,7 +19,7 @@
             display: block;
             background-color: rgba(22, 97, 127, 1);
             margin: 5% auto;
-            padding: 20px;
+            padding: 10px;
             border: 1px solid #888;
             border-radius: 20px;
             width: 50%;
@@ -28,11 +28,24 @@
         }
         
         label,
-        .close-btn {
+        .exit-btn {
             color: white;
             font-family: 'Permanent Marker', cursive;
-            font-size: clip(1.5em 5vw 4em);
             text-shadow: 4px 4px 5px black, 2px 2px 0 #fe5353, 2px -2px 0 #fe5353, -2px 2px 0 #fe5353, -2px -2px 0 #fe5353, 2px 0px 0 #fe5353, 0px 2px 0 #fe5353, -2px 0px 0 #fe5353, 0px -2px 0 #fe5353;
+        }
+        
+        label {
+            font-size: clamp(1.5em 5vw 4em);
+        }
+        
+        .exit-btn {
+            font-size: clamp(3vw, 3vw, 3vw);
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .exit-btn i {
+            cursor: pointer;
         }
         
         .red {
@@ -72,13 +85,4 @@
         
         .modal-social {
             margin-top: 10%;
-        }
-        
-        .close-btn {
-            display: flex;
-            justify-content: flex-end;
-        }
-        
-        .close-btn i {
-            cursor: pointer;
         }
