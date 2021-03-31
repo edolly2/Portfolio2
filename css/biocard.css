@@ -69,7 +69,7 @@ h2 {
     font-family: 'Permanent Marker';
     color: #FFFFFF;
     text-shadow: 4px 4px 5px black, 2px 2px 2px rgb(0, 1, 61), 2px -2px 2px rgb(0, 1, 61), -2px 2px 2px rgb(0, 1, 61), -2px -2px 2px rgb(0, 1, 61), 2px 0px 2px rgb(0, 1, 61), 0px 2px 2px rgb(0, 1, 61), -2px 0px 2px rgb(0, 1, 61), 0px -2px 2px rgb(0, 1, 61), 0px 0px 2px rgb(0, 1, 61), 2px 0px 2px rgb(0, 1, 61);
-    font-size: clamp(30px, 4vw, 40px);
+    font-size: clamp(20px, 3vw, 30px);
     font-weight: bold;
     text-align: center;
     padding: 5px 0 20px 0;
