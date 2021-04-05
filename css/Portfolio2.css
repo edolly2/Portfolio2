@@ -9,6 +9,8 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background: none;
+            height: 101%;
         }
         
         *,
@@ -24,7 +26,6 @@
         html,
         body {
             background-image: url("../images/meredblue.png"), radial-gradient(circle, rgba(48, 201, 254, 1) 20%, rgba(243, 208, 156, 1) 67%, rgba(254, 83, 83, 1) 82%, rgba(22, 97, 127, 1) 87%, rgba(24, 25, 25, 1) 100%);
-            ;
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
@@ -161,7 +162,6 @@
             color: white;
             text-shadow: 4px 4px 7px black;
             font-size: small;
-            position: relative;
             transition: all 0.2s linear;
         }
         
