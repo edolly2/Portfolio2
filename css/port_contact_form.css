@@ -86,3 +86,10 @@
         .modal-social {
             margin-top: 10%;
         }
+        
+        @media screen and (max-width: 600px) {
+            form {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
