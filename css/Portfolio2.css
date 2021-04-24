@@ -22,6 +22,14 @@
         img {
             max-width: 100%;
         }
+
+        summary {
+            cursor: pointer;
+            color: white;
+            text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61);
+            font-family: 'Permanent Marker';
+            font-weight: bold;
+        }
         
         html,
         body {
