@@ -3,7 +3,7 @@
         /*                                                    */
         /* ================================================== */
         /* ---ALL--- */
-        
+
         html {
             font-size: 100%;
             margin: 0;
@@ -12,13 +12,13 @@
             background: none;
             height: 101%;
         }
-        
+
         *,
         *:before,
         *:after {
             box-sizing: inherit;
         }
-        
+
         img {
             max-width: 100%;
         }
@@ -30,7 +30,7 @@
             font-family: 'Permanent Marker';
             font-weight: bold;
         }
-        
+
         html,
         body {
             background-image: url("../images/meredblue.png"), radial-gradient(circle, rgba(48, 201, 254, 1) 20%, rgba(243, 208, 156, 1) 67%, rgba(254, 83, 83, 1) 82%, rgba(22, 97, 127, 1) 87%, rgba(24, 25, 25, 1) 100%);
@@ -41,7 +41,7 @@
             overflow-y: auto;
             overflow-x: hidden;
         }
-        
+
         header h1 {
             padding-top: 30px;
         }
@@ -49,7 +49,7 @@
         /*                      BELOW                         */
         /*                                                    */
         /* ================================================== */
-        
+
         .grid-container {
             display: grid;
             grid-template-columns: 0.4fr 2fr 0.1fr;
@@ -57,7 +57,7 @@
             gap: 0px 0px;
             grid-template-areas: "header header header""main main main""footer footer footer";
         }
-        
+
         .grid-head {
             grid-area: header;
             max-height: 125px;
@@ -66,7 +66,7 @@
         /*                       BELOW                        */
         /*                                                    */
         /* ================================================== */
-        
+
         .nav {
             height: 100%;
             width: 0;
@@ -81,7 +81,7 @@
             grid-area: nav;
             box-shadow: 5px 5px 20px black;
         }
-        
+
         .nav a {
             padding: 7vh 10px;
             text-decoration: none;
@@ -90,12 +90,12 @@
             display: block;
             transition: all 0.2s linear;
         }
-        
+
         .nav a:hover {
             color: yellow;
             text-decoration: line-through;
         }
-        
+
         .nav .closebtn {
             position: absolute;
             top: 0;
@@ -104,7 +104,7 @@
             margin-left: 50px;
         }
         /* ---NAV BUTTON--- */
-        
+
         .arrow {
             position: absolute;
             color: #fe5353;
@@ -118,23 +118,23 @@
         /*                       BELOW                        */
         /*                                                    */
         /* ================================================== */
-        
+
         .main {
             grid-area: main;
         }
-        
+
         #main {
             transition: margin-left .5s;
             padding: 5%;
         }
-        
+
         .main h1 {
             display: flex;
             justify-content: flex-end;
             font-size: clamp(4em, 5.5em, 6em);
             padding: 4%;
         }
-        
+
         .main-p {
             display: flex;
             font-size: clamp(1em, 1.5em, 2em);
@@ -146,25 +146,25 @@
         /*                       BELOW                        */
         /*                                                    */
         /* ================================================== */
-        
+
         .foot {
             display: flex;
             grid-area: footer;
         }
-        
+
         #copy {
             padding-left: 2%;
             color: white;
             align-self: flex-end;
         }
         /* ---SOCIAL MEDIA--- */
-        
+
         .social {
             height: auto;
             margin-left: auto;
             padding-top: 10px;
         }
-        
+
         .social a {
             padding: 0 10px;
             color: white;
@@ -172,11 +172,11 @@
             font-size: small;
             transition: all 0.2s linear;
         }
-        
+
         .social a:hover {
             color: yellow;
         }
-        
+
         .social i:hover {
             transform: translate(-5px, -5px);
         }
@@ -184,7 +184,7 @@
         /*                       BELOW                        */
         /*                                                    */
         /* ================================================== */
-        
+
         #logo {
             grid-area: logo;
             display: flex;
@@ -198,7 +198,7 @@
         /*                       BELOW                        */
         /*                                                    */
         /* ================================================== */
-        
+
         #myname,
         .main-p,
         .nav {
@@ -207,13 +207,13 @@
             font-family: 'Monday Routines';
             font-weight: bold;
         }
-        
+
         .main-p,
         .nav {
             font-family: 'Permanent Marker', cursive;
             font-weight: normal;
         }
-        
+
         .nav a:hover {
             text-shadow: 4px 4px 5px black, 2px 2px 0 rgb(0, 1, 61), 2px -2px 0 rgb(0, 1, 61), -2px 2px 0 rgb(0, 1, 61), -2px -2px 0 rgb(0, 1, 61), 2px 0px 0 rgb(0, 1, 61), 0px 2px 0 rgb(0, 1, 61), -2px 0px 0 rgb(0, 1, 61), 0px -2px 0 rgb(0, 1, 61), 0px 0px 10px white;
         }
@@ -223,7 +223,7 @@
         /*                       BELOW                        */
         /*                                                    */
         /* ================================================== */
-        
+
         @keyframes arrow-fas {
             0% {
                 color: white;
@@ -249,7 +249,7 @@
         /*                                                    */
         /* ================================================== */
         /* ---MAX-WIDTH */
-        
+
         @media screen and (max-width: 750px) {
             #copy {
                 display: none;
@@ -258,7 +258,7 @@
                 font-size: 9vw;
             }
         }
-        
+
         @media screen and (max-width: 600px) {
             html {
                 font-size: 80%;
@@ -270,7 +270,7 @@
                 font-size: 9px;
             }
         }
-        
+
         @media screen and (max-width: 500px) {
             .arrow {
                 font-size: 50px;
@@ -282,7 +282,7 @@
                 font-size: 40px;
             }
         }
-        
+
         @media screen and (max-width: 380px) {
             .social a {
                 font-size: 6px;
@@ -292,7 +292,7 @@
             }
         }
         /* ---MAX-HEIGHT--- */
-        
+
         @media screen and (max-height: 480px) {
             .foot {
                 position: relative;
