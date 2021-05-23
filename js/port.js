@@ -35,4 +35,8 @@ $(document).ready(() => {
     $(certsBtn).on('click', () => {
         $(certsModal).show();
     })
+
+    $('.test').on('click', () => {
+        $('.test').hide();
+    })
 });
