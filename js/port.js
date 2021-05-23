@@ -22,3 +22,17 @@ function openForm() {
 function closeForm() {
     document.getElementById('myForm').style.display = 'none';
 }
+
+const certsModal = $('.certs-modal-cont');
+const certsExitBtn = $('.certs-modal-close-btn');
+const certsBtn = $('.certs-btn');
+
+$(document).ready(() => {
+    $(certsExitBtn).on('click', () => {
+        $(certsModal).hide();
+    });
+
+    $(certsBtn).on('click', () => {
+        $(certsModal).show();
+    })
+});

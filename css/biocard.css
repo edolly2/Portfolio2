@@ -87,3 +87,38 @@ h2 {
     width: 50%;
     margin: 0 auto;
 }
+
+.certs-btn-cont {
+    text-align: center;
+}
+
+.certs-btn {
+    padding: 1rem 3rem;
+    font-family: 'Permanent Marker';
+    background-color: yellow;
+    color: white;
+    font-weight: bold;
+    text-shadow: 4px 4px 5px black, 2px 2px 2px rgb(0, 1, 61), 2px -2px 2px rgb(0, 1, 61), -2px 2px 2px rgb(0, 1, 61), -2px -2px 2px rgb(0, 1, 61), 2px 0px 2px rgb(0, 1, 61), 0px 2px 2px rgb(0, 1, 61), -2px 0px 2px rgb(0, 1, 61), 0px -2px 2px rgb(0, 1, 61), 0px 0px 2px rgb(0, 1, 61), 2px 0px 2px rgb(0, 1, 61);
+    font-size: clamp(16px, 1.5vw, 24px);
+    border-radius: 6px;
+}
+
+.certs-modal-cont {
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background-color: white;
+}
+
+.certs-modal-close-btn-cont {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.certs-modal-close-btn {
+    font-size: clamp(30px, 2.6vw, 40px);;
+}
